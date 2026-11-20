@@ -134,6 +134,36 @@ body:not(.dark) .category-tile.active{background:#e5e7ea;outline-color:#777d86;c
 @media(prefers-reduced-motion:no-preference){.zoom-btn{transition:transform .18s,background .18s}}
 </style><style>
 @media(max-width:480px){}
+</style><style>
+/* M.M accessories visual refresh */
+:root{--black:#fff;--blue:#2457a6;--blue2:#7b1e3a;--ink:#172033;--muted:#68758a;--line:#e5eaf2}
+body{background:#fff;color:#172033}
+.header{background:#fff!important;color:#172033!important;border-bottom:1px solid #e8edf5}
+.header nav{color:#34445e}
+.brand-name{color:#172033!important}
+.hero{background:linear-gradient(115deg,#fff 0%,#eef4ff 62%,#f7edf1 100%)!important;color:#172033!important;position:relative;overflow:hidden}
+.hero:after{content:"M.M";position:absolute;left:5%;bottom:-42px;font-size:clamp(110px,22vw,230px);font-weight:900;letter-spacing:-12px;color:#2457a608;pointer-events:none}
+.hero-in{position:relative;z-index:1}
+.hero h1 em,.eyebrow{color:#7b1e3a!important}
+.hero p{color:#52627a!important}
+.btn{background:#2457a6!important;color:#fff!important;border-radius:13px}
+.btn:hover{background:#7b1e3a!important}
+.card{border:1px solid #e5eaf2;border-radius:20px;box-shadow:0 10px 28px #1d355710}
+.art{background:linear-gradient(140deg,#2457a6,#8db5f0)!important}
+.card:nth-child(3n+2) .art{background:linear-gradient(140deg,#7b1e3a,#c68b9f)!important}
+.card:nth-child(3n) .art{background:linear-gradient(140deg,#edf3ff,#b8ccef)!important;color:#2457a6}
+.price{color:#7b1e3a!important}
+.add,.support button{background:#edf3ff!important;color:#2457a6!important}
+.add:hover{background:#f5e8ed!important;color:#7b1e3a!important}
+footer{background:#f7f9fd!important;color:#172033!important;border-top:1px solid #e5eaf2}
+.foot p{color:#68758a!important}
+.foot a{color:#7b1e3a!important}
+.apple-dock{background:#fff!important;border-color:#dce5f2!important;box-shadow:0 8px 30px #17345c20!important}
+.apple-dock a,.apple-dock button{color:#2457a6!important}
+.apple-dock a.active,.apple-dock button:active{background:#edf3ff!important;color:#7b1e3a!important}
+.drawer,.settings-card{background:#fff!important;color:#172033!important}
+.support{background:#fff!important;border-color:#dce5f2!important}
+@media(max-width:650px){.hero-in{padding-top:48px;padding-bottom:48px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.art{height:165px}}
 </style></head>
 <body>
 <header class="header"><div class="bar"><a class="logo" href="#home" aria-label="M.M"><span class="brand-name">M.M</span></a><nav><a href="#home">الرئيسية</a><a href="#products">المنتجات</a><a href="#contact">تواصل معنا</a></nav><button class="btn cartbtn" onclick="openCart()">السلة (<span id="count">0</span>)</button></div></header>
