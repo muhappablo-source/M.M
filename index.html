@@ -338,7 +338,7 @@ body.dark .setting-actions button.active{background:#7b1e3a!important}
 </style></head>
 <body>
 <header class="header"><div class="bar"><nav><a href="#home">الرئيسية</a><a href="#products">المنتجات</a><a href="#contact">تواصل معنا</a></nav><button class="btn cartbtn" onclick="openCart()">السلة (<span id="count">0</span>)</button></div></header>
-<section class="hero" id="home"><div class="hero-in"><div><h1>تسوّق</h1><p class="hero-categories">ساعات • دباديب • شنط • محافظ • إكسسوارات</p><a class="btn" href="#products" style="display:inline-block">تصفح المنتجات</a></div></div></section>
+<section class="hero" id="home"><div class="hero-in"><div><h1>تسوّق</h1><p class="hero-categories">ذوق مختلف</p><a class="btn" href="#products" style="display:inline-block">ابدأ الآن</a></div></div></section>
 <main class="wrap" id="products"><div class="heading"><div><h2>تسوق منتجاتنا</h2><p>محافظ، إكسسوارات، شنط، دباديب وساعات — اختار اللي بتحبه.</p></div></div><div id="categoryTiles" class="category-tiles"></div><div class="filters"><input id="search" placeholder="ابحث عن منتج..." oninput="renderProducts()"><select id="category" onchange="selectedCategory=this.value;renderCategoryTiles();renderProducts()"><option value="all">كل الأقسام</option><option>محافظ</option><option>إكسسوارات</option><option>شنط</option><option>دباديب</option><option>ساعات</option></select></div><div class="grid" id="grid"></div></main>
 <div class="image-viewer" id="imageViewer" role="dialog" aria-modal="true" aria-label="تكبير صورة المنتج" onclick="if(event.target===this)closeImageViewer()"><button class="viewer-close" type="button" aria-label="إغلاق" onclick="closeImageViewer()">×</button><img id="viewerImage" alt=""><div class="viewer-caption" id="viewerCaption"></div></div>
 
