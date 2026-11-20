@@ -25,7 +25,7 @@
 <div class="panel"><div class="row" style="justify-content:space-between;align-items:center"><h2>طلبات التصميم الخاص الجديدة</h2><a class="button" href="hm-records.html">السجل</a></div><p class="muted">هنا الطلبات التي لم تتم مراجعتها فقط. بعد القبول أو الرفض تختفي من هذه الشاشة وتنتقل إلى صفحة السجل المنفصلة.</p><button type="button" class="secondary" id="refreshCustom">تحديث الطلبات</button><div id="customList" class="muted">جاري تحميل الطلبات...</div></div>
 </section></main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script>
-const sb=window.supabase.createClient('https://YOUR_MM_SUPABASE_PROJECT.supabase.co','YOUR_MM_SUPABASE_PUBLISHABLE_KEY');
+const sb=window.supabase.createClient('https://vfuahfaribrgdbhmvgbj.supabase.co','sb_publishable_gzg--3_OlPB7IBpyrBDRJQ_MQP8BxRW');
 const el=id=>document.getElementById(id);
 function msg(id,text){el(id).textContent=text;el(id).classList.remove('hidden')}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
