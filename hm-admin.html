@@ -44,7 +44,7 @@ body.dark .item{border-color:#405674!important}
 <section class="panel" id="login"><h1>دخول المدير</h1><p class="muted">استخدم البريد وكلمة المرور اللذين أنشأتهما في Supabase Authentication.</p>
 <label>البريد الإلكتروني</label><input id="email" type="email" autocomplete="username">
 <label>كلمة المرور</label><input id="password" type="password" autocomplete="current-password">
-<button id="loginBtn">تسجيل الدخول</button><div id="loginMsg" class="msg hidden"></div></section>
+<button type="button" id="loginBtn">تسجيل الدخول</button><div id="loginMsg" class="msg hidden"></div></section>
 <section id="dashboard" class="hidden">
 <div class="panel"><h1>إدارة المنتجات</h1><p class="muted">إضافة القطع وتعديلها وحذفها. القطع النشطة تظهر في واجهة المتجر.</p><button class="secondary" id="logout">تسجيل الخروج</button></div>
 <div class="panel"><h2>إدارة أقسام المنتجات</h2><p class="muted">أضف الأقسام أو احذفها، وستظهر تلقائياً في مربعات الأقسام بالمتجر.</p><div class="row"><input id="newCategory" maxlength="40" placeholder="اسم القسم الجديد"><button type="button" id="addCategory">إضافة قسم</button></div><div id="categoryList" class="muted">جاري تحميل الأقسام...</div></div>
@@ -58,7 +58,7 @@ body.dark .item{border-color:#405674!important}
 </div><button type="submit">حفظ</button> <button type="button" class="secondary" id="clear">إلغاء التعديل</button><div id="formMsg" class="msg hidden"></div></form></div>
 <div class="panel"><h2>المنتجات الحالية</h2><div id="list" class="muted">جاري التحميل...</div></div>
 </section></main>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="https://unpkg.com/@supabase/supabase-js@2"></script><script>
 const sb=window.supabase.createClient('https://vfuahfaribrgdbhmvgbj.supabase.co','sb_publishable_gzg--3_OlPB7IBpyrBDRJQ_MQP8BxRW');
 const el=id=>document.getElementById(id);
 function msg(id,text){el(id).textContent=text;el(id).classList.remove('hidden')}
