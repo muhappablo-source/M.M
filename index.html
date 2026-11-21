@@ -384,7 +384,7 @@ function setLang(v){
  document.querySelector('.filters select option[value="all"]').textContent=ar?'كل التصنيفات':'All categories';
  document.querySelector('#contact .foot>div:first-child p').textContent=ar?'وجهتك للمحافظ والإكسسوارات والشنط والهدايا المميزة.':'Your destination for wallets, accessories, bags and gifts.';
  document.querySelector('#contact .foot>div:last-child>b').textContent=ar?'الطلبات والدعم وخدمة العملاء':'Orders, support & customer service';
- document.querySelector('#contact .foot>div:last-child p').innerHTML=ar?'واتساب: <a href="#">0</a><br>واتساب: <a href="#">0</a><br>للطلبات والدعم وخدمة العملاء.':'WhatsApp: <a href="#">0</a><br>WhatsApp: <a href="#">0</a><br>For orders and customer support.';
+ document.querySelector('#contact .foot>div:last-child p').innerHTML=ar?'واتساب: <a href="https://wa.me/201505434119" target="_blank" rel="noopener">01505434119</a><br>للطلبات والدعم وخدمة العملاء.':'WhatsApp: <a href="https://wa.me/201505434119" target="_blank" rel="noopener">01505434119</a><br>For orders and customer support.';
  document.querySelector('.drawer-head h2').textContent=ar?'سلة المشتريات':'Shopping cart';document.querySelector('.drawer-head .close').textContent=ar?'إغلاق ✕':'Close ✕';
  const dock=document.querySelectorAll('.apple-dock a,.apple-dock button'),labels=ar?['الرئيسية','المنتجات','السلة','الإعدادات']:['Home','Products','Cart','Settings'];dock.forEach((el,i)=>{el.title=labels[i];el.setAttribute('aria-label',labels[i])});
  renderCategoryTiles();renderProducts();if(document.getElementById('drawer').classList.contains('show'))renderCart();
